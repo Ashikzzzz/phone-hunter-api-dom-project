@@ -15,6 +15,7 @@
             <input type="email" class="form-control w-50" id="search-field" placeholder="search your phone">
             <button id="search-button" class="btn btn-primary mt-3">Search</button>
           </div>
+         
     </section>
     <section class="container">
   
@@ -25,8 +26,40 @@
         <div>
             <h4 id="no-phone" class="text-danger mt-3 d-none">warning! please type a valid phone name</h4>
         </div>
+        
+          <div id="show-all" class="text-center d-none">
+            <button id="show-all-btn" class="btn btn-primary">Show All</button>
+          </div>
+
+
+          <!-- modal  -->
+  <div>
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="load-all" class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+          
+          
     </section>
-    <section >
+
       <div id="spinners" style="height: 400px;" class=" d-flex d-none justify-content-center align-items-center">
         <div class="spinner-grow text-primary" role="status">
             <span class="visually-hidden">Loading...</span>
@@ -50,7 +83,13 @@
             <span class="visually-hidden">Loading...</span>
           </div>
       </div>
+     
     </section>
     <script src="app.js"></script>
+    <script src="utilities.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+>
